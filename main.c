@@ -12,7 +12,7 @@ int n;
 
 int push1(data_t push_data, data_t *stack_data)
 {
-	if (index < 100) {
+	if (index < 10) {
 		stack_data[index] = push_data;
 		index++;
 		return 1;
@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
 	data_t *stack_data;
 	
 
-	stack_data = (int*)malloc(sizeof(int)*100);
+	stack_data = (int*)malloc(sizeof(int)*10);
 	
 
 	while (fgets(str, sizeof(str), stdin)) {
