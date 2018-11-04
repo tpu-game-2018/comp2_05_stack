@@ -2,7 +2,7 @@
 #define STACKCAPA 10
  int main(int argc, char *argv[])
 {
-	char str[7];
+	char str[100];
 	int data;
 	int stack[STACKCAPA];
 	int stackNum = 0;
