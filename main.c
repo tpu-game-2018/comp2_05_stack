@@ -9,7 +9,7 @@
 	int stockNum=0;
 	int stack[STACKCAPA];
 	int stackNum=0;
-	int i;
+	int i=0;
     
 	while (fgets(str, sizeof(str), stdin))
  	{
