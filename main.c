@@ -35,7 +35,8 @@
 			    break;
  		    case -1:
 		    	if (stockNum > 0) 
-		    	if (stackNum > 0) {
+		    	if (stackNum > 0) 
+			{
 		    		stockNum--;
 		    		printf("%d\n", stock[stockNum]);	
 		    		stackNum--;
@@ -47,7 +48,8 @@
 		    	break;
  	    	default:
 				if(stockNum < STOCKCAPA)
-				if(stackNum < STACKCAPA){
+				if(stackNum < STACKCAPA)
+				{
 	    			stock[stockNum] = data;
 		    		stockNum++;
 	    			stack[stackNum] = data;
