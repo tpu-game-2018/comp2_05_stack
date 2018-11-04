@@ -1,26 +1,30 @@
 #include <stdio.h>
- #define STOCKCAPA 10 
-#define STACKCAPA 10 
+ #define STUCKCAPA 10
+#define STACKCAPA 10
  int main(int argc, char *argv[])
 {
 	char str[7];
 	int data;
-	int stock[STOCKCAPA];
-	int stockNum = 0;
+	int stuck[STUCKCAPA];
+	int stuckNum = 0;
 	int stack[STACKCAPA];
 	int stackNum = 0;
 	int i = 0;
     
-	while (fgets(str, sizeof(str), stdin)){
+	while (fgets(str, sizeof(str), stdin))
+ 	{
  		data = atoi(str);
-		switch (data){
+		switch (data)
+		{
 		    case 0:
-				if(stockNum > 0)
-				if(stackNum > 0){
-			   		i = stockNum-1;
+				if(stuckNum > 0)
+				if(stackNum > 0)
+				{
+			   		i = stuckNum-1;
 			   		i = stackNum-1;
-			   		while (i >= 0){
-			    		printf("%d", stock[i]);
+			   		while (i >= 0)
+			    	{
+			    		printf("%d", stuck[i]);
 			    		printf("%d", stack[i]);
 			    		i--;
  			    		if (i >= 0)
@@ -29,29 +33,31 @@
  			    			printf("\n");
  			    	}
  				}
- 				else{
+ 				else
+ 				{
  					printf("\n");	
  				}
 			    break;
  		    case -1:
-		    	if (stockNum > 0) 
+		    	if (stuckNum > 0) 
 		    	if (stackNum > 0) 
-			{
-		    		stockNum--;
-		    		printf("%d\n", stock[stockNum]);	
+		    	{
+		    		stuckNum--;
+		    		printf("%d\n", stuck[stuckNum]);	
 		    		stackNum--;
 		    		printf("%d\n", stack[stackNum]);	
 		    	}
-		    	else	{
+		    	else
+               	{
  		    		printf("\n");
                	}
 		    	break;
  	    	default:
-				if(stockNum < STOCKCAPA)
+				if(stuckNum < STUCKCAPA)
 				if(stackNum < STACKCAPA)
 				{
-	    			stock[stockNum] = data;
-		    		stockNum++;
+	    			stuck[stuckNum] = data;
+		    		stuckNum++;
 	    			stack[stackNum] = data;
 		    		stackNum++;
 				}
