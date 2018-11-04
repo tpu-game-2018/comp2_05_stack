@@ -43,7 +43,7 @@
 				if(stockNum < STOCKCAPA)
 				if(stackNum < STACKCAPA){
 	    			stock[stockNum] = data;
-		    		stuckNum++;
+		    		stockNum++;
 	    			stack[stackNum] = data;
 		    		stackNum++;
 				}
