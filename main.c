@@ -15,18 +15,25 @@ int main(int argc, char *argv[])
 		data = atoi(str);
 		switch (data)
 		{
-		    case 0:	
-			    i = stuckNum-1;
-			    while (i >= 0)
-			    {
-			    	printf("%d", stuck[i]);
-			    	i--;
+		    case 0:
+				if(stuckNum > 0)
+				{
+			   		i = stuckNum-1;
+			   		while (i >= 0)
+			    	{
+			    		printf("%d", stuck[i]);
+			    		i--;
 
-			    	if (i >= 0)
-			    		printf(",");
-			    	else
-			    		printf("\n");
-			    }
+			    		if (i >= 0)
+			    			printf(",");
+			    		else
+			    			printf("\n");
+			    	}
+				}
+				else
+				{
+					printf("\n");	
+				}
 			    break;
 
 		    case -1:
@@ -36,14 +43,17 @@ int main(int argc, char *argv[])
 		    		printf("%d\n", stuck[stuckNum]);	
 		    	}
 		    	else
-                {
+               	{
 		    		printf("\n");
-                }
+              	}
 		    	break;
 
 	    	default:
-	    		stuck[stuckNum] = data;
-		    	stuckNum++;
+				if(stuckNum < STUCKCAPA)
+				{
+	    			stuck[stuckNum] = data;
+		    		stuckNum++;
+				}
 		    	break;
 		}
 	}
