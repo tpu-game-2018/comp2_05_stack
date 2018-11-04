@@ -13,7 +13,7 @@
  		data = atoi(str);
 		switch (data)
 		{
-		    case 0;
+			case 0:
 				if(stackNum > 0)
 				{
 			   		i = stackNum-1;
