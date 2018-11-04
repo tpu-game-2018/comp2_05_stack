@@ -22,10 +22,12 @@
 			    		
 			    		printf("%d", stack[i]);
 			    		i--;
- 			    		if (i >= 0)
+ 			    		if (i >= 0){
  			    			printf(",");
- 			    		else
+					}
+ 			    		else{
  			    			printf("\n");
+					}
  			    	}
  				}
  				else
