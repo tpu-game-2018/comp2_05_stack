@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
         x=atoi(str);
         if(x==0){
             for(j=i-1;j>=0;j--){
-                printf("%d",a[j])
+                printf("%d",a[j]);
                 if(j>0)
                     printf(",");
             }
