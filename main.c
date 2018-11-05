@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
             printf("\n");
         }
         else if(x==-1){
-            printf("%d\n",a[i-1]);
+            printf("%d\n",a[i]);
             a[i-1]='\0';
             i--;
         }
