@@ -2,7 +2,7 @@
 
 int main(int argc, char *argv[]) 
 {
-    char str[7];
+    char str[100];
     int i=0,j,a[100],x;
     for(j=0;j<100;j++)
         a[j]='\0';
