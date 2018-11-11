@@ -3,7 +3,7 @@
 int main(int argc, char *argv[]) 
 {
     char str[100];
-    int i=0,j,a[100],x;
+    int i=0,j,a[10],x;
     for(j=0;j<100;j++)
         a[j]='\0';
     while(fgets(str, sizeof(str), stdin)){
@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
             a[i-1]='\0';
             i--;
         }
-        else{
+        else if(i<10){
             a[i]=x;
             i++;
         }
