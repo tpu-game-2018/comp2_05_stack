@@ -4,7 +4,7 @@ int main(int argc, char *argv[])
 {
     char str[100];
     int i=0,j,a[10],x;
-    for(j=0;j<100;j++)
+    for(j=0;j<10;j++)
         a[j]='\0';
     while(fgets(str, sizeof(str), stdin)){
         x=atoi(str);
